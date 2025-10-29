@@ -1,0 +1,145 @@
+# ==========================================
+# PropertyRAG - GitHub Upload Commands
+# ==========================================
+# Copy and paste these commands to upload your project to GitHub
+
+# ========== STEP 1: Verify Git is Installed ==========
+git --version
+# If error, install Git from: https://git-scm.com/download/win
+
+# ========== STEP 2: Navigate to Project Directory ==========
+cd c:\Users\hanza\OneDrive\Desktop\PropertyRAG\project
+
+# ========== STEP 3: Configure Git (FIRST TIME ONLY) ==========
+# Replace with YOUR name and email
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+
+# ========== STEP 4: Initialize Git Repository ==========
+git init
+
+# ========== STEP 5: Add All Files ==========
+git add .
+
+# ========== STEP 6: Check What Will Be Committed ==========
+git status
+# VERIFY: .env should NOT be listed (should be ignored)
+# VERIFY: venv/ should NOT be listed (should be ignored)
+
+# ========== STEP 7: Create Initial Commit ==========
+git commit -m "Initial commit: Production-grade PropertyRAG system
+
+- Advanced RAG system with Gemini + Pinecone
+- Modern Streamlit UI with dark mode
+- Sophisticated query understanding and intent classification
+- Multi-turn conversation support with session tracking
+- Hybrid search with caching and diversity filtering
+- Professional prompt engineering with 7 intent-specific templates
+- Confidence scoring and follow-up suggestions
+- Comprehensive error handling and ambiguity detection
+- Real-time metrics dashboard and query analytics
+- Deterministic analytics engine for area comparisons
+- Complete documentation and setup instructions"
+
+# ========== STEP 8: Create GitHub Repository ==========
+# 1. Go to: https://github.com/
+# 2. Click "+" icon → "New repository"
+# 3. Name: PropertyRAG
+# 4. Description: AI-Powered Real Estate Intelligence Platform with RAG
+# 5. Make it Public or Private
+# 6. DO NOT initialize with README, .gitignore, or license
+# 7. Click "Create repository"
+# 8. Copy the repository URL (shown on next page)
+
+# ========== STEP 9: Add Remote Repository ==========
+# Replace YOUR_USERNAME with your actual GitHub username
+git remote add origin https://github.com/YOUR_USERNAME/PropertyRAG.git
+
+# ========== STEP 10: Verify Remote ==========
+git remote -v
+
+# ========== STEP 11: Rename Branch to Main ==========
+git branch -M main
+
+# ========== STEP 12: Push to GitHub ==========
+git push -u origin main
+
+# ==========================================
+# ✅ DONE! Your project is now on GitHub!
+# ==========================================
+
+# View your repository at:
+# https://github.com/YOUR_USERNAME/PropertyRAG
+
+# ==========================================
+# FUTURE UPDATES (After making changes)
+# ==========================================
+
+# Check what changed:
+git status
+
+# Add changes:
+git add .
+
+# Commit with message:
+git commit -m "Description of your changes"
+
+# Push to GitHub:
+git push origin main
+
+# ==========================================
+# USEFUL GIT COMMANDS
+# ==========================================
+
+# View commit history:
+git log --oneline
+
+# View file differences:
+git diff
+
+# Undo uncommitted changes:
+git checkout -- filename.py
+
+# View remote URL:
+git remote -v
+
+# Pull latest changes:
+git pull origin main
+
+# Create new branch:
+git checkout -b feature/new-feature
+
+# Switch back to main:
+git checkout main
+
+# ==========================================
+# SECURITY CHECK
+# ==========================================
+
+# Verify .env is ignored (should output: .gitignore:X:.env)
+git check-ignore -v .env
+
+# Verify venv/ is ignored (should output: .gitignore:X:venv/)
+git check-ignore -v venv/
+
+# ==========================================
+# TROUBLESHOOTING
+# ==========================================
+
+# If "remote origin already exists":
+git remote remove origin
+git remote add origin https://github.com/YOUR_USERNAME/PropertyRAG.git
+
+# If "failed to push":
+git pull origin main --rebase
+git push origin main
+
+# If you need to delete a commit:
+git reset --soft HEAD~1  # Keeps changes
+# or
+git reset --hard HEAD~1  # Deletes changes
+
+# ==========================================
+# 🎉 Congratulations!
+# ==========================================
+# Your PropertyRAG project is now on GitHub and ready to share!

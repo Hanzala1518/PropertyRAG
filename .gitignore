@@ -1,0 +1,128 @@
+# ==========================================
+# PropertyRAG - .gitignore
+# ==========================================
+
+# ========== Python ==========
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# ========== Environment Variables ==========
+.env
+.env.local
+.env.*.local
+
+# ========== IDE / Editors ==========
+# VSCode
+.vscode/
+.vscode/*
+!.vscode/settings.json.example
+!.vscode/extensions.json.example
+
+# PyCharm
+.idea/
+*.iml
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb
+
+# ========== Operating System ==========
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# ========== Logs ==========
+*.log
+logs/
+rag_system.log
+query_metrics.jsonl
+
+# ========== Testing ==========
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# ========== Project Specific ==========
+# Large video/document files
+*.mkv
+*.mp4
+*.avi
+*.mov
+*.docx
+*.pdf
+*.pptx
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Data files (if large or sensitive)
+# Uncomment if you don't want to track data files
+# *.csv
+# data/
+
+# Cache directories
+.cache/
+__pycache__/
+
+# Pinecone local cache
+.pinecone/
+
+# Streamlit cache
+.streamlit/
+
+# Model weights (if any)
+*.h5
+*.pkl
+*.joblib
+*.pt
+*.pth

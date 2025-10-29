@@ -1,0 +1,14 @@
+fastapi==0.110.0
+uvicorn==0.27.1
+streamlit>=1.39.0,<2
+numpy>=2.1.0
+python-dotenv==1.0.1
+requests==2.32.3
+tqdm==4.66.4
+
+# Retrieval & embeddings
+pinecone-client>=3.0.0,<4
+google-generativeai==0.7.2
+
+# Reranker: we fall back to Gemini-based scoring if sentence-transformers isn't available
+# sentence-transformers==2.7.0
